@@ -1,0 +1,175 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.box {
+	background-color: rgb(202, 202, 202);
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.text {
+	line-height: 2em;
+}
+
+.hello {
+	color: cyan;
+	background: #000;
+	margin: auto;
+}
+
+.xiaosi {
+	margin: auto;
+}
+
+.fontdiff {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.fontdiff:first-child {
+	font-weight: bold;
+	/* color: red; */
+}
+
+.fontdiff:nth-child(2) {
+	font-size: 20px;
+}
+
+.fontdiff:nth-child(3) {
+	font-style: italic;
+}
+
+.fontdiff:nth-child(4) {
+	font-variant: small-caps;
+}
+
+.fontdiff:last-child {
+	text-decoration: underline;
+}
+
+.firstimg {
+	width: auto;
+	/* 解决图片底部有空白的方法 */
+	vertical-align: middle;
+}
+
+.firstimg:hover {
+	opacity: 0.7;
+	transform: scale(1.01);
+}
+
+/* table {
+    text-align: center;
+} */
+
+table,
+tr {
+	border: 1px solid violet;
+	border-collapse: collapse;
+}
+
+table td {
+	padding: 20px;
+}
+
+.border {
+	width: 200px;
+	height: 200px;
+	background: cyan;
+	border: 2px solid black;
+	border-color: #000 red blue yellow;
+	float: left;
+}
+
+.radius {
+	position: sticky;
+	top: 0;
+	margin: 20px;
+	width: 200px;
+	height: 200px;
+	background: rgb(163, 255, 120);
+	/* border-radius: 100px; */
+	border-radius: 0 50%;
+}
+
+.radius:hover {
+	transition: 0.2s ease-in-out;
+	box-shadow: 0 0px 10px 10px rgba(0, 0, 0, 0.3);
+	/* box-shadow: x y blur spare color; */
+}
+
+.radius h1 {
+	color: aliceblue;
+	text-align: center;
+	line-height: 200px;
+	position: absolute;
+	/* left: 50%;
+    margin-left: -100px; */
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+
+.radius h1:hover {
+	transition: 0.5s ease-in-out;
+	text-shadow: 0 0px 10px rgba(0, 0, 0, 0.8);
+	/* box-shadow: x y blur spare color; */
+}
+
+/* -------------------------------- */
+
+.sprites {
+	width: 200px;
+	height: 100px;
+	background: url(./截屏2024-01-15\ 11.57.01.png) no-repeat;
+	background-position: -200px -199px;
+}
+
+.iconfont img {
+	width: 100px;
+	height: 100px;
+	background-color: cyan;
+	/* background: url(./点赞.svg) no-repeat; */
+	/* vertical-align: middle; */ /* 解决图片底部有空白的方法 */
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-bottom: 0px solid black;
+	border-top: 100px solid transparent;
+	border-left: 0px solid blue;
+	border-right: 50px solid red;
+	cursor: pointer;
+}
+
+.wenzishenglve-single {
+	width: 100px;
+	height: 100px;
+	background-color: #000;
+	color: white;
+	/* 单行文字超出的时候用省略号显示 */
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.wenzishenglve-mul {
+	width: 100px;
+	height: 100px;
+	background-color: #000;
+	color: white;
+	/* 多行文字超出的时候用省略号显示 */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	/* 多行时第几行的文字超出时用省略号显示 */
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	/* 最好让后台人员去做 */
+}
